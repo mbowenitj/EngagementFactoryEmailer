@@ -1,0 +1,84 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/*global variables*/
+$light-gray:#D3D3D3;
+
+body{
+  // background-color: $light-gray;
+}
+.container{
+  width:80%;
+  .header-image img{
+      width:75%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+    .logged-in{
+      background-color: $light-gray;
+      width:75%;
+      height: 50px;
+      margin: 0 auto;
+      text-align: right;
+    }
+    .tips{
+      width: 65%;
+      margin: 0 auto;
+      h2{
+        color: deeppink;
+      }
+    }
+    hr {
+        border-top: 2px solid #ccc;
+    }
+    .first-row-menu{
+      width: 65%;
+      margin: 0 auto;
+      font-size: 12px;
+      line-height: 18px;
+      h3{
+        color: deeppink;
+        // width: 100%;
+      }
+      img{
+        width: 180px;
+        height: 120px;
+      }
+      li{
+        list-style: none;
+        margin-top: 8px;
+        margin-left: -41px;
+      }
+      .middle-column{
+          margin-top: 8px;
+          // width: 258px;
+      }
+      .left-column li:before{
+         content: "• ";
+         color: cornflowerblue;
+         list-style: none;
+      }
+      .right-column li:before{
+         content: "• ";
+         color: cornflowerblue;
+         list-style: none;
+      }
+      .aanbod-text{
+        color: cornflowerblue;
+        font-size: 14px;
+      }
+      .btn-primary{
+        width:180px;
+      }
+    }
+    .third-row-image img{
+      width:75%;
+      height:350px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+  }
