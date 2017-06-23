@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>EngagementFactory</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -43,15 +44,18 @@
           <h3 class="hidden-xs">Energie besparen, zo doet u dat</h3>
        </div>
          <img src="/images/MobileFinal-8.jpg" class="header-image">
+             <!--Show div on small devices-->
           <div class="logged-in-container-show-small-devices visible-xs">
             <p class="energie">Energie besparen, zo doet u dat</p>
             <p class="logged-in"><span class="glyphicon glyphicon-user"> Inloggen</span><a href="#"> Mijn Essent</a></p>
-        </div>
+         </div> <!--End Show on small devices div -->
 
+        <!--Show div on large devices -->
         <div class="logged-in-container-show-large-devices hidden-xs">
           <p class="energie visible-xs">Energie besparen, zo doet u dat</p>
           <p class="logged-in"><span class="glyphicon glyphicon-user"> Inloggen</span><a href="#"> Mijn Essent</a></p>
-      </div>
+       </div>  <!--End Show on large devices div -->
+
         <!--tips header div-->
         <div class="tips">
           <h2>Gebruik deze tips</h2>
@@ -90,7 +94,7 @@
 
            <!--clear floating div-->
             <!-- <div class="clearfix"></div> -->
-          <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="col-xs-12 col-sm-12 col-md-4">
             <h3>Nest Learning Thermostat<sup>TM</sup></h3>
            <img src="/images/MobileFinal-5.jpg"  class="hidden-xs">
            <img src="/images/MobileFinal-5.jpg" class="visible-xs">
@@ -105,10 +109,18 @@
           </div>
         </div><!--End first row menu -->
         <br><br>
+        <!--cooking-dad div-->
         <div class="cooking-dad">
           <img src="/images/image.jpg">
-            <!-- <p class="logged-in"><a href="#"><span class="glyphicon glyphicon-user"></span> Mijn Essent</a></p> -->
-        </div>
+            <!--Show paragraph on small devices -->
+            <p class="cooking-dad-show-small-devices visible-xs visible-sm">CV-Kertel:<br>het warme hart van hues></p>
+
+          <!--Show div on large devices -->
+          <div class="hidden-xs hidden-sm">
+            <p><span>CV-Kertel: het warme hart van hues ></span></p><br><br>
+            <button type="button" class="btn btn-primary">Lorem ipsum</button>
+         </div><!--End div on large devices -->
+      </div><!--End cooking-dad div-->
 
         <!--gaming row div -->
         <div class="row gaming-row">

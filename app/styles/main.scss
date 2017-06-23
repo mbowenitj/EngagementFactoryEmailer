@@ -6,6 +6,7 @@ $icon-font-path: '../fonts/';
 /*global variables*/
 $light-gray:#D3D3D3;
 $white:#FFFFFF;
+$black:#000000;
 
 body{
   // background-color: $light-gray;
@@ -23,7 +24,7 @@ body{
         float: left;
       }
       h3{
-        color:deeppink;
+        color:#ed1556;
         text-align: right;
         margin-top: 24px;
       }
@@ -39,7 +40,7 @@ body{
             font-size: 15px;
           }
             padding-top: 18px;
-            background-color: deeppink;
+            background-color: #ed1556;
           .energie{
             color: $white;
             margin-left: 10px;
@@ -51,8 +52,6 @@ body{
             height: 50px;
             margin-top: 25px;
             padding-top: 18px;
-            // padding-left:5px;
-            //  margin-right: 14px;
           }
         }
         .logged-in-container-show-large-devices{
@@ -64,24 +63,18 @@ body{
            padding-top: 15px;
            height: 50px;
            text-align: right;
-         .logged-in{
-           background-color: $light-gray;
-          //  text-align: right;
-           // padding-top: 18px;
-            margin-right: 16px;
-         }
+           .logged-in{
+             background-color: $light-gray;
+              margin-right: 16px;
+           }
        }
 
     .tips{
       width: 80%;
       margin: 0 auto;
       h2{
-        color: deeppink;
+        color: #ed1556;
       }
-    }
-
-    hr {
-        border-top: 2px solid #ccc;
     }
 
     .first-row-images{
@@ -89,12 +82,12 @@ body{
       margin: 0 auto;
       font-size: 12px;
       h3{
-        color: deeppink;
+        color: #ed1556;
         width: 163px;
       }
       img{
-        width: 280px;
-        height: 200px;
+        width: 260px;
+        height: 180px;
       }
       img.visible-xs{
         width: 360px;
@@ -107,7 +100,7 @@ body{
       .middle-column{
           margin-top: 8px;
           line-height: 23px;
-          width: 280px;
+          width: 270px;
       }
       .left-column li:before{
          content: "• ";
@@ -123,24 +116,52 @@ body{
         color: cornflowerblue;
         font-size: 14px;
       }
-      .btn-primary{
-        width:180px;
-      }
     }
-    .cooking-dad img{
-      width:100%;
+    .cooking-dad{
+      img{
+        width: 100%;
+      }
+      .hidden-xs {
+        width: 531px;
+        padding-left: 80px;
+        margin-top: -350px;
+        position: absolute;
+      }
+      .hidden-xs p {
+        background-color: #ed1556;
+        padding: 6px 0;
+        color: $white;
+        display: inline;
+        font-size: 35px;
+      }
+      span{
+        box-decoration-break: clone;
+        padding: 0 20px;
+      }
+        .btn-primary{
+          width: 120px;
+        }
+      .visible-xs {
+         padding-top: 8px;
+         height: 62px;
+         background-color: #ed1556;
+         color: $white;
+         font-size: 17px;
+         padding-left: 35px;
+         margin-top: -1px;
+     }
     }
     .gaming-row{
       width: 80%;
       margin: 0 auto;
       margin-top: 25px;
       h2{
-        color: deeppink;
+        color: #ed1556;
       }
       img{
         // width:360px;
         margin-top: 20px;
-        width: 500px;
+        width: 400px;
         // height: 200px;
       }
       img.visible-xs{
@@ -156,9 +177,8 @@ body{
       width: 80%;
       margin: 0 auto;
       margin-top: 25px;
-      // font-family: Lato-Black;
       h2{
-        color: deeppink;
+        color: #ed1556;
         width: 340px;
       }
        img{
@@ -178,9 +198,8 @@ body{
       width: 80%;
       margin: 0 auto;
       margin-top: 25px;
-      // font-family: Lato-Black;
       h2{
-        color: deeppink;
+        color: #ed1556;
         width: 340px;
       }
        img{
@@ -200,6 +219,10 @@ body{
     .counter-image{
       width: 80%;
       margin: 0 auto;
+      h2{
+        color: #ed1556;
+        // width: 340px;
+      }
       img{
           height: 180px;
       }
@@ -208,8 +231,105 @@ body{
     width:80%;
     margin: 0 auto;
     padding-top: 10px;
+    font-size: 13px;
       .copyright-header{
-        font-weight: bold;
+        color: $black;
+      }
+      p{
+        color: gray;
       }
     }
+    .btn-primary{
+      width: 180px;
+    }
   }
+
+  /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */
+    // @media only screen and (min-width : 320px) {
+    //   .container{
+    //     .tips{
+    //       width: 80%;
+    //       margin: 0 auto;
+    //     }
+    //     .btn-primary{
+    //       display: table;
+    //       margin: 0 auto;
+    //     }
+    //     img.header-image {
+    //         // width: 510px;
+    //         // margin-left: -14px;
+    //         // height: auto;
+    //         // margin-top: 24px;
+    //     }
+    //     .logged-in-container-show-small-devices{
+    //      span{
+    //       //  color: grey;
+    //        font-size: 15px;
+    //      }
+    //        padding-top: 18px;
+    //        width: 510px;
+    //        margin-left: -14px;
+    //    }
+    //    .cooking-dad img{
+    //     //  width:510px;
+    //     //  margin-left: -14px;
+    //    }
+    //    .essent-footer-logo img{
+    //     //  width: 510px;
+    //     //  height: 110px;
+    //     //   margin-left: -14px;
+    //    }
+    //   }
+    // }
+    //
+    // /* Extra Small Devices, Phones */
+    // @media only screen and (min-width : 480px) {
+    //
+    // }
+    //
+    // /* Small Devices, Tablets */
+    // @media only screen and (min-width : 768px) {
+    //   .container{
+    //     .btn-primary{
+    //       // display: table;
+    //       // margin: 0 auto;
+    //     }
+    //     .first-row-images{
+    //       img{
+    //         width: 400px;
+    //         height: 220px;
+    //       }
+    //     }
+    //     .counter-image{
+    //       img{
+    //         // display: block;
+    //         // margin-left: auto;
+    //         // margin-right: auto;
+    //       }
+    //     }
+    //   }
+    // }
+    //
+    // /* Medium Devices, Desktops */
+    // @media only screen and (min-width : 992px) {
+    //   .container{
+    //     .first-row-images{
+    //       img{
+    //         width: 240px;
+    //         height: 180px;
+    //       }
+    //       .middle-column{
+    //           line-height: 19px;
+    //           width: 240px;
+    //       }
+    //
+    //     }
+    //   }
+    // }
+    //
+    // /* Large Devices, Wide Screens */
+    // @media only screen and (min-width : 1200px) {
+    //
+    // }
