@@ -81,11 +81,11 @@ body {
             width: 163px;
         }
         img {
-            width: 245px;
-            height: auto;
+            width: 290px;
+            height: 200px;
         }
         img.visible-xs {
-            width: 280px;
+            width: 290px;
             display: block;
             margin-left: 0;
             margin-right: 0;
@@ -120,9 +120,9 @@ body {
             width: 100%;
         }
         .hidden-xs {
-            width: 440px;
-            padding-left: 19px;
-            margin-top: -250px;
+            width: 500px;
+            padding-left: 40px;
+            margin-top: -278px;
             position: absolute;
         }
         .hidden-xs p {
@@ -130,7 +130,7 @@ body {
             padding: 6px 0;
             color: $white;
             display: inline;
-            font-size: 30px;
+            font-size: 35px;
         }
         span {
             box-decoration-break: clone;
@@ -164,7 +164,7 @@ body {
             height: auto;
         }
         img.visible-xs {
-            width: 280px;
+            width: 290px;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -190,7 +190,7 @@ body {
             height: auto;
         }
         img.visible-xs {
-            width: 280px;
+            width: 290px;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -212,7 +212,7 @@ body {
             height: auto;
         }
         img.visible-xs {
-            width: 280px;
+            width: 290px;
             display: block;
             margin-left: auto;
             margin-right: auto;
