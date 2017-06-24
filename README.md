@@ -1,4 +1,3 @@
-# EngagementFactoryEmailer
 Getting Started
 =================
 1. git clone project
